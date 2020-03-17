@@ -1,1 +1,32 @@
-
+//EJERCICIO 1
+#include<stdio.h>
+int main()
+{
+  int niv,j,es,num,pa,pa2,esp2=0,con;
+  printf("*****PROGRAMA 1*****\n");
+  printf("\ndigite un numero de niveles :");
+  scanf("%d",&num);            
+ for(niv=0;niv<=num-1;niv++)
+ {
+  for(es=num;es>niv;es--)//4>4 no ----->3>4---->1>4
+    {
+      printf(" ");
+    }
+   for(j=0;j<niv+1;j++)//0<5
+      {
+        printf(" *");
+      }
+      
+  printf("\n");
+  
+ }
+   for(con=1;con<=3;con++)
+   {
+       for(pa=num;pa>0;pa--)//4>4 no ----->3>4---->1>4
+        {
+          printf(" ");
+        }
+        printf(" |\n");
+    }
+    
+}
